@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <defs>
+        <linearGradient id="jupiterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f5b041"/>
+            <stop offset="50%" stop-color="#f39c12"/>
+            <stop offset="100%" stop-color="#d35400"/>
+        </linearGradient>
+        <filter id="jupiterGlow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+        </filter>
+    </defs>
+    <circle cx="100" cy="100" r="90" fill="url(#jupiterGrad)" filter="url(#jupiterGlow)"/>
+    <!-- Bands -->
+    <ellipse cx="100" cy="60" rx="80" ry="15" fill="#e67e22" opacity="0.8"/>
+    <ellipse cx="100" cy="80" rx="85" ry="15" fill="#f5b041" opacity="0.8"/>
+    <ellipse cx="100" cy="100" rx="80" ry="15" fill="#e67e22" opacity="0.8"/>
+    <ellipse cx="100" cy="120" rx="85" ry="15" fill="#f5b041" opacity="0.8"/>
+    <ellipse cx="100" cy="140" rx="80" ry="15" fill="#e67e22" opacity="0.8"/>
+    <!-- Great Red Spot -->
+    <ellipse cx="140" cy="90" rx="15" ry="10" fill="#c0392b" opacity="0.9"/>
+    <text x="100" y="180" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Jupiter</text>
+</svg>

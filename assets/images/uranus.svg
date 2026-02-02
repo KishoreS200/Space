@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <defs>
+        <radialGradient id="uranusGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#5dade2"/>
+            <stop offset="50%" stop-color="#3498db"/>
+            <stop offset="100%" stop-color="#2980b9"/>
+        </radialGradient>
+        <filter id="uranusGlow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+        </filter>
+    </defs>
+    <circle cx="100" cy="100" r="90" fill="url(#uranusGrad)" filter="url(#uranusGlow)"/>
+    <!-- Rings (faint) -->
+    <ellipse cx="100" cy="100" rx="100" ry="15" fill="none" stroke="#ecf0f1" stroke-width="3" stroke-opacity="0.3" transform="rotate(45 100 100)"/>
+    <text x="100" y="180" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Uranus</text>
+</svg>

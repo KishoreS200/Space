@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Through the Universe</title>
+    <meta name="description" content="Explore the wonders of space and time through this cinematic journey">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Skip navigation link for accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <canvas id="starfield-canvas"></canvas>
+            <div class="hero-text">
+                <h1>You Are Looking Billions of Years Into the Past</h1>
+                <p class="subtitle">Because light takes time to travel across the universe.</p>
+            </div>
+            <div class="scroll-indicator">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Solar System Section -->
+        <section class="solar-system">
+            <div class="container">
+                <h2 class="section-title">Our Solar System</h2>
+                <div class="planet-grid">
+                    <!-- Mercury -->
+                    <div class="planet-card">
+                        <div class="planet-image">
+                            <img src="assets/images/mercury.svg" alt="Mercury" loading="lazy">
+                        </div>
+                        <h3>Mercury</h3>
+                        <p class="distance">Distance: 0.39 AU (57.9 million km)</p>
+                        <p class="light-time">Light Travel: 3.2 minutes</p>
+                        <p class="fact">The smallest planet, with extreme temperature variations from -173°C to 427°C.</p>
+                    </div>
+                    
+                    <!-- Venus -->
+                    <div class="planet-card">
+                        <div class="planet-image">
+                            <img src="assets/images/venus.svg" alt="Venus" loading="lazy">
+                        </div>
+                        <h3>Venus</h3>
+                        <p class="distance">Distance: 0.72 AU (108.2 million km)</p>
+                        <p class="light-time">Light Travel: 6 minutes</p>
+                        <p class="fact">Hottest planet with a toxic atmosphere of carbon dioxide and sulfuric acid clouds.</p>
+                    </div>
+                    
+                    <!-- Earth -->
+                    <div class="planet-card">
+                        <div class="planet-image">
+                            <img src="assets/images/earth.svg" alt="Earth" loading="lazy">
+                        </div>
+                        <h3>Earth</h3>
+                        <p class="distance">Distance: 1 AU (149.6 million km)</p>
+                        <p class="light-time">Light Travel: 8.3 minutes</p>
+                        <p class="fact">The only known planet to support life, with 71% water surface.</p>
+                    </div>
+                    
+                    <!-- Mars -->
+                    <div class="planet-card">
+                        <div class="planet-image">
+                            <img src="assets/images/mars.svg" alt="Mars" loading="lazy">
+                        </div>
+                        <h3>Mars</h3>
+                        <p class="distance">Distance: 1.52 AU (227.9 million km)</p>
+                        <p class="light-time">Light Travel: 12.7 minutes</p>
+                        <p class="fact">Home to the largest volcano (Olympus Mons) and deepest canyon (Valles Marineris) in the solar system.</p>
+                    </div>
+                    
+                    <!-- Jupiter -->
+                    <div class="planet-card">
+                        <div class="planet-image">
+                            <img src="assets/images/jupiter.svg" alt="Jupiter" loading="lazy">
+                        </div>
+                        <h3>Jupiter</h3>
+                        <p class="distance">Distance: 5.20 AU (778.3 million km)</p>
+                        <p class="light-time">Light Travel: 43.2 minutes</p>
+                        <p class="fact">The largest planet, with a Great Red Spot storm that has raged for over 300 years.</p>
+                    </div>
+                    
+                    <!-- Saturn -->
+                    <div class="planet-card">
+                        <div class="planet-image">
+                            <img src="assets/images/saturn.svg" alt="Saturn" loading="lazy">
+                        </div>
+                        <h3>Saturn</h3>
+                        <p class="distance">Distance: 9.58 AU (1.43 billion km)</p>
+                        <p class="light-time">Light Travel: 1.3 hours</p>
+                        <p class="fact">Known for its spectacular ring system made of ice and rock particles.</p>
+                    </div>
+                    
+                    <!-- Uranus -->
+                    <div class="planet-card">
+                        <div class="planet-image">
+                            <img src="assets/images/uranus.svg" alt="Uranus" loading="lazy">
+                        </div>
+                        <h3>Uranus</h3>
+                        <p class="distance">Distance: 19.22 AU (2.87 billion km)</p>
+                        <p class="light-time">Light Travel: 2.7 hours</p>
+                        <p class="fact">Rotates on its side at a 98-degree angle, giving it extreme seasons.</p>
+                    </div>
+                    
+                    <!-- Neptune -->
+                    <div class="planet-card">
+                        <div class="planet-image">
+                            <img src="assets/images/neptune.svg" alt="Neptune" loading="lazy">
+                        </div>
+                        <h3>Neptune</h3>
+                        <p class="distance">Distance: 30.05 AU (4.50 billion km)</p>
+                        <p class="light-time">Light Travel: 4.2 hours</p>
+                        <p class="fact">The windiest planet with supersonic winds reaching 2,100 km/h.</p>
+                    </div>
+                    
+                    <!-- Pluto (Dwarf Planet) -->
+                    <div class="planet-card dwarf-planet">
+                        <div class="planet-image">
+                            <img src="assets/images/pluto.svg" alt="Pluto" loading="lazy">
+                        </div>
+                        <h3>Pluto</h3>
+                        <p class="distance">Distance: 39.48 AU (5.91 billion km)</p>
+                        <p class="light-time">Light Travel: 5.5 hours</p>
+                        <p class="fact">The largest dwarf planet, with a heart-shaped glacier of nitrogen and methane ice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Speed of Light Section -->
+        <section class="speed-of-light">
+            <div class="container">
+                <h2 class="section-title">The Speed of Light</h2>
+                <p class="section-subtitle">"We never see the universe as it is, only as it was."</p>
+                
+                <div class="light-speed-grid">
+                    <div class="light-item">
+                        <div class="light-icon">🌍</div>
+                        <div class="light-info">
+                            <h3>Earth → Moon</h3>
+                            <p class="light-distance">384,400 km</p>
+                            <p class="light-time">1.3 seconds</p>
+                        </div>
+                    </div>
+                    
+                    <div class="light-item">
+                        <div class="light-icon">☀️</div>
+                        <div class="light-info">
+                            <h3>Earth → Sun</h3>
+                            <p class="light-distance">149.6 million km</p>
+                            <p class="light-time">8 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="light-item">
+                        <div class="light-icon">🪐</div>
+                        <div class="light-info">
+                            <h3>Earth → Mars</h3>
+                            <p class="light-distance">54.6 - 401 million km</p>
+                            <p class="light-time">3–22 minutes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="light-item">
+                        <div class="light-icon">❄️</div>
+                        <div class="light-info">
+                            <h3>Earth → Pluto</h3>
+                            <p class="light-distance">4.4 - 7.5 billion km</p>
+                            <p class="light-time">~5.5 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="light-item">
+                        <div class="light-icon">⭐</div>
+                        <div class="light-info">
+                            <h3>Earth → Nearest Star</h3>
+                            <p class="light-distance">4.24 light-years</p>
+                            <p class="light-time">4.24 years</p>
+                        </div>
+                    </div>
+                    
+                    <div class="light-item">
+                        <div class="light-icon">🌌</div>
+                        <div class="light-info">
+                            <h3>Earth → Andromeda Galaxy</h3>
+                            <p class="light-distance">2.5 million light-years</p>
+                            <p class="light-time">2.5 million years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Universe Timeline Section -->
+        <section class="universe-timeline">
+            <div class="container">
+                <h2 class="section-title">Universe Timeline</h2>
+                <p class="section-subtitle">A journey through cosmic history</p>
+                
+                <div class="timeline-container">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">13.8 billion years ago</div>
+                            <h3>Big Bang</h3>
+                            <p>The universe begins with an incredibly hot, dense singularity that rapidly expands.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">13.6 billion years ago</div>
+                            <h3>First Stars</h3>
+                            <p>The first generation of stars (Population III) form from primordial hydrogen and helium.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">4.5 billion years ago</div>
+                            <h3>Earth Formation</h3>
+                            <p>Our planet forms from the solar nebula, eventually developing a solid crust and oceans.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">4.5 billion years ago</div>
+                            <h3>Moon Formation</h3>
+                            <p>A Mars-sized body collides with Earth, creating debris that forms our Moon.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">3.8 billion years ago</div>
+                            <h3>Origin of Life</h3>
+                            <p>The first life forms appear on Earth, beginning the long journey of evolution.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">300,000 years ago</div>
+                            <h3>Humans Appear</h3>
+                            <p>Homo sapiens evolve in Africa, marking the beginning of modern human history.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">70,000 years ago</div>
+                            <h3>Modern Humans</h3>
+                            <p>Behavioral modernity emerges with advanced tools, art, and complex social structures.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-scale">
+                    <p>If the universe's history were compressed into one year, humans would appear in the last 30 seconds.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Space Missions Section -->
+        <section class="space-missions">
+            <div class="container">
+                <h2 class="section-title">Space Missions</h2>
+                <p class="section-subtitle">Humanity's journey beyond Earth</p>
+                
+                <div class="missions-grid">
+                    <div class="mission-card">
+                        <div class="mission-image">
+                            <img src="assets/images/voyager.svg" alt="Voyager 1" loading="lazy">
+                        </div>
+                        <div class="mission-info">
+                            <h3>Voyager 1</h3>
+                            <p class="mission-year">Launch: 1977</p>
+                            <p class="mission-purpose">Exploring the outer solar system and interstellar space beyond.</p>
+                            <div class="mission-status active">Active</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-image">
+                            <img src="assets/images/apollo11.svg" alt="Apollo 11" loading="lazy">
+                        </div>
+                        <div class="mission-info">
+                            <h3>Apollo 11</h3>
+                            <p class="mission-year">Launch: 1969</p>
+                            <p class="mission-purpose">First human moon landing with Neil Armstrong and Buzz Aldrin.</p>
+                            <div class="mission-status inactive">Historical</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-image">
+                            <img src="assets/images/curiosity.svg" alt="Mars Rover Curiosity" loading="lazy">
+                        </div>
+                        <div class="mission-info">
+                            <h3>Mars Rover (Curiosity)</h3>
+                            <p class="mission-year">Launch: 2011</p>
+                            <p class="mission-purpose">Exploring Gale Crater and searching for signs of past microbial life.</p>
+                            <div class="mission-status active">Active</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-card">
+                        <div class="mission-image">
+                            <img src="assets/images/iss.svg" alt="International Space Station" loading="lazy">
+                        </div>
+                        <div class="mission-info">
+                            <h3>International Space Station</h3>
+                            <p class="mission-year">Launch: 1998</p>
+                            <p class="mission-purpose">Orbiting laboratory for scientific research and international cooperation.</p>
+                            <div class="mission-status active">Active</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-quote">
+                <p>"The universe is under no obligation to make sense to you."</p>
+                <p class="attribution">— Neil deGrasse Tyson</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Journey Through the Universe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+</body>
+</html>

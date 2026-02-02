@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <defs>
+        <radialGradient id="earthGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#1a5276"/>
+            <stop offset="100%" stop-color="#2e86de"/>
+        </radialGradient>
+        <filter id="earthGlow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+        </filter>
+    </defs>
+    <!-- Earth -->
+    <circle cx="100" cy="100" r="90" fill="url(#earthGrad)" filter="url(#earthGlow)"/>
+    <!-- Continents -->
+    <path d="M70,60 Q80,50 90,60 Q100,70 95,80 Q90,90 80,85 Q70,80 70,60" fill="#58d68d"/>
+    <path d="M110,70 Q120,60 130,70 Q140,80 135,90 Q130,100 120,95 Q110,90 110,70" fill="#58d68d"/>
+    <path d="M60,110 Q70,100 80,110 Q90,120 85,130 Q80,140 70,135 Q60,130 60,110" fill="#58d68d"/>
+    <text x="100" y="180" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Earth</text>
+</svg>
